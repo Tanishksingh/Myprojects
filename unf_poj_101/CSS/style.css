@@ -1,0 +1,316 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+html{
+    scroll-behavior: smooth;
+}
+:root{
+    --navbar-height: 59px;
+}
+/* Navigation bar */
+
+#mydiv{
+    display: flex;
+    flex-direction: column;
+}
+/* Navigation bar :List elements styling*/
+#navbar {
+    /* display: flex; */
+    align-items: center;
+    position: sticky;
+    top: 0px;
+}
+
+#navbar::before {
+    content: "";
+    background-color: black;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+    
+}
+/* Navigation bar: Logo and image*/
+#logo {
+    margin-top: 4px;
+    margin-bottom: 0px;
+}
+
+#logo img {
+    border-radius: 25px;
+    height: 50px;
+    width: 58px;
+
+}
+/* Navigation bar :list styling */
+#navbar ul {
+            display: flex;
+            padding: 0px 0px;
+            font-family: 'Kirang Haerang', cursive;
+        }
+        
+        
+        #navbar ul li {
+            list-style: none;
+            
+        }
+
+        #navbar ul li a {
+            color: white;
+            display: block;
+            padding: 0px 15px;
+            border-radius: 20px;
+            text-decoration: none;
+            
+        }
+
+        #navbar ul li a:hover {
+            color: black;
+            background: white;
+        }
+
+        #navbar h3 {
+            color: white;
+            margin: 0px 5px;
+            font-size: 1.9rem;
+            font-family: 'Kirang Haerang', cursive;
+            cursor: context-menu;
+        }
+
+        /* HOME STYLING */
+        #home {
+            display: flex;
+            flex-direction: column;
+            /* padding: 0px 207px; */
+            height: 344px;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            z-index: -1;
+        }
+
+        #home::before {
+            content: "";
+            background: url(./IMAGES/burger.jpg) no-repeat center center/cover;
+            position: absolute;
+            top: 0px;
+            height: 57%;
+            width: 100%;
+            z-index: -1;
+            opacity: 1;
+            
+        }
+
+
+        #home h1 {
+            margin-top: 0px;
+            color: white;
+            text-align: center;
+            font-size: 1.9rem;
+            font-family: 'Kirang Haerang', cursive;
+        }
+
+        #home p {
+            margin: 1px;
+            color: white;
+            text-align: center;
+            font-size: 1.2rem;
+            font-family: 'Kirang Haerang', cursive;
+        }
+
+        /* SERVICES SECTION */
+        #service-section {
+            position: relative;
+            z-index: -1;
+            /* height: 344px;
+            margin: 0px; */
+        }
+
+        #services {
+            /* margin: 40px; */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        #services .box {
+            /* border: 2px solid black; */
+            padding: 10px;
+            margin: 5px 25px;
+            /* border-radius: 23px; */
+            /* background-color: #f1f1f1; */
+            text-align: center;
+
+        }
+
+        #services .box img {
+            display: block;
+            height: 160px;
+            margin: auto;
+            border-radius: 34px;
+        }
+
+        #services.box p {
+            color: black;
+        }
+
+
+        /* CLIENT SECTION */
+        #client-section {
+            position: relative;
+            z-index: -1;
+            /* height: 293px;
+            margin: 0px; */    
+        }
+
+        #client-section::before {
+            content: "";
+            position: absolute;
+            background: url(./IMAGES/clients.jpg) no-repeat center center/cover;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            opacity: 0.6;
+        }
+
+        #clients {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+
+        #clients .client-item {
+            /* border: 2px solid black; */
+            padding: 10px;
+            /* margin: 0px 20px; */
+            /* border-radius: 23px; */
+            /* background-color: #f1f1f1; */
+            /* text-align: center; */
+        }
+
+        #clients .client-item img {
+            /* display: block; */
+            height: 160px;
+            /* margin: auto; */
+            /*border-radius: 10px; */
+        }
+
+        /* COONTACT US SECTION */
+        #contact{
+            position: relative;
+            /* z-index: -1; */
+            /* height: 293px;
+            margin: 0px; */
+        }
+        #contact::before{
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            opacity: 0.7;
+            background: url(./IMAGES/contact.jpg) no-repeat center center/cover;
+        }
+        #contact-box{
+            display: flex;
+            /* justify-content: center; */
+            align-items: center;
+            padding: 0px 15px;
+        }
+        #contact-box input,#contact-box textarea{
+            width: 100%;
+            padding: 0.5rem;
+            border-radius: 10px;
+            font-size: 0.80rem;
+            font-family:'Kirang Haerang', cursive ;
+
+        }
+        #contact-box:hover{
+            cursor: pointer;
+        }
+        #contact-box form{
+           width: 40%;
+        }
+        #contact-box label{
+           font-size: 1.3rem;
+           font-family:'Kirang Haerang', cursive;
+        }
+        .form-group ::placeholder{
+            font-family:'Kirang Haerang', cursive;
+        }
+        
+        /* ABOUT US SECTION */
+        #history{
+            position: relative;
+            z-index: -1;
+            /* height: 293px;
+            margin: 0px; */
+        }
+        #history::before{
+            content: "";   
+            position: absolute;
+            width: 100%;
+            height: 567px;
+            z-index: -1;
+            opacity: 0.7;
+            background: url(./IMAGES/about.jpg) no-repeat center center/cover;
+            text-align: center;
+            justify-content: center;
+        }
+        #p-history{
+            color: black;
+            font-size: 1.2em;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 0px 15px;
+            font-family: 'Kirang Haerang', cursive;
+        }
+        #h-history {
+            color: black;
+            text-align: center;
+            font-size: 2.8rem;
+            font-family: 'Kirang Haerang', cursive;
+            margin: 0px;
+        }
+        /* FOOTER */
+        .center{
+            background: black;
+            color: white;
+            text-align: center;
+        }
+        .btn {
+            padding: 3px 3px;
+            border: 2px solid white;
+            background-color: #dac7c7;
+            margin: 8px;
+            font-size: 1.3rem;
+            border-radius: 18px;
+        }
+
+        .btn:hover {
+            cursor: pointer;
+        }
+
+        /* utility classes */
+
+        
+        .h-primary {
+            color: black;
+            text-align: center;
+            font-size: 2.8rem;
+            font-family: 'Kirang Haerang', cursive;
+            margin: 0px;
+        }
+
+        .h-secondary {
+            font-size: 1.3rem;
+            font-family: 'Kirang Haerang', cursive;
+        }

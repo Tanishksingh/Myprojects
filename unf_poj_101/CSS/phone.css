@@ -1,0 +1,18 @@
+/* It will demonstrate how your webpage looks in phone */
+
+/* NAVIGATION */
+#navbar{
+    flex-direction: column;
+}
+
+/* HOME_SECTION */
+
+/* SERVICE_SECTION */
+#services{
+    flex-direction: column;
+}
+/* CLIENT_SECTION */
+
+/* CONTACT-SECTION */
+
+/* FOOTER */
